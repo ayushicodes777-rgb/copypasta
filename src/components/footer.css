@@ -1,0 +1,347 @@
+/* ===================================================
+                        FOOTER
+=================================================== */
+
+.footer{
+
+    position:relative;
+
+    overflow:hidden;
+
+    width:100%;
+
+    padding:90px 8% 35px;
+
+    background:#F6F5F2;
+
+    border-top:1px solid #E8E8E8;
+
+}
+
+/* ===================================================
+                AMBIENT RED GLOW
+=================================================== */
+
+.footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-260px;
+
+    transform:translateX(-50%);
+
+    width:1700px;
+
+    height:700px;
+
+    background:radial-gradient(
+
+        ellipse at center,
+
+        rgba(180,0,0,.09) 0%,
+
+        rgba(180,0,0,.05) 28%,
+
+        rgba(180,0,0,.02) 55%,
+
+        transparent 78%
+
+    );
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.footer>*{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+/* ===================================================
+                    BRAND
+=================================================== */
+
+.footer-brand{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+}
+
+.footer-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-logo svg{
+
+    color:#B40000;
+
+}
+
+.footer-logo h2{
+
+    font-size:2.2rem;
+
+    font-weight:800;
+
+    color:#171717;
+
+    letter-spacing:-1px;
+
+}
+
+.footer-brand p{
+
+    max-width:500px;
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:.98rem;
+
+    line-height:1.8;
+
+}
+
+/* ===================================================
+                    LINKS
+=================================================== */
+
+.footer-links{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:55px;
+
+    margin-bottom:70px;
+
+}
+
+/* ===================================================
+                    COLUMN
+=================================================== */
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-column h4{
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:#171717;
+
+    margin-bottom:22px;
+
+}
+
+.footer-column a{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    color:#666;
+
+    font-size:.95rem;
+
+    margin-bottom:16px;
+
+    transition:.25s ease;
+
+}
+
+.footer-column a:hover{
+
+    color:#B40000;
+
+    transform:translateX(4px);
+
+}
+
+.footer-column svg{
+
+    width:14px;
+
+    height:14px;
+
+}
+
+/* ===================================================
+                BOTTOM
+=================================================== */
+
+.footer-bottom{
+
+    padding-top:30px;
+
+    border-top:1px solid #E5E5E5;
+
+}
+
+.footer-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-info div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#666;
+
+    font-size:.92rem;
+
+}
+
+.footer-info svg{
+
+    color:#B40000;
+
+}
+
+.footer-bottom p{
+
+    text-align:center;
+
+    color:#888;
+
+    font-size:.88rem;
+
+}
+
+/* ===================================================
+                    RESPONSIVE
+=================================================== */
+
+@media(max-width:1000px){
+
+.footer-links{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:45px;
+
+}
+
+.footer-brand{
+
+    margin-bottom:55px;
+
+}
+
+.footer-logo h2{
+
+    font-size:1.9rem;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.footer{
+
+    padding:70px 6% 30px;
+
+}
+
+.footer-links{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+    text-align:center;
+
+}
+
+.footer-column{
+
+    align-items:center;
+
+}
+
+.footer-column a{
+
+    justify-content:center;
+
+}
+
+.footer-info{
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.footer-logo{
+
+    flex-direction:column;
+
+}
+
+.footer-logo h2{
+
+    font-size:1.6rem;
+
+}
+
+.footer-brand p{
+
+    font-size:.92rem;
+
+}
+
+}

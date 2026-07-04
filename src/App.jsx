@@ -1,12 +1,36 @@
+import { useState, useEffect } from "react";
+import HowItWorks from "./components/howitworks";
+import Services from "./components/services";
+import Resources from "./components/resources";
+import FAQ from "./components/faq";
+import Footer from "./components/footer";
 import "./App.css";
 
 import {
   UserCircle,
   Moon,
+  Sun,
   Box
 } from "lucide-react";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+useEffect(() => {
+
+  if (darkMode) {
+
+    document.body.classList.add("dark-mode");
+
+  }
+
+  else{
+
+    document.body.classList.remove("dark-mode");
+
+  }
+
+}, [darkMode]);
   return (
     <>
 
@@ -16,31 +40,51 @@ function App() {
 
         <div className="logo">
 
-          <Box
-            size={34}
-            strokeWidth={2.2}
-            className="logo-icon"
-          />
+  <Box
+    size={34}
+    strokeWidth={2.2}
+    className="logo-icon"
+  />
 
-          <h2>COPYPASTA</h2>
+  <h2>COPYPASTA</h2>
 
-        </div>
+</div>
 
         <ul className="nav-links">
 
-          <li>Services</li>
-          <li>How It Works</li>
-          <li>Resources</li>
-          <li>FAQ</li>
-          <li>Contact</li>
+  <li>Services</li>
 
-        </ul>
+  <li>How It Works</li>
+
+  <li>Resources</li>
+
+  <li>FAQ</li>
+
+  <li>Contact</li>
+
+</ul>
 
         <div className="nav-actions">
 
-          <button className="theme-btn">
-            <Moon size={18} />
-          </button>
+          <button
+
+    className="theme-btn"
+
+    onClick={() => setDarkMode(!darkMode)}
+
+>
+
+    {darkMode ?
+
+        <Sun size={18}/>
+
+        :
+
+        <Moon size={18}/>
+
+    }
+
+</button>
 
           <button className="login-btn">
             <UserCircle size={22} />
@@ -80,7 +124,7 @@ function App() {
 
     <span>FROM</span>
 
-    <span>IDEA</span>
+    <span>IMAGE</span>
 
     <span>TO OBJECT</span>
 
@@ -203,43 +247,22 @@ function App() {
       </section>
       {/* ================= HOW IT WORKS ================= */}
 
-      <section>
+      <HowItWorks/>
 
-        <h1>
-          How It Works
-        </h1>
-
-      </section>
 
       {/* ================= SERVICES ================= */}
 
-      <section>
+<Services/>
 
-        <h1>
-          Services
-        </h1>
-
-      </section>
+<Resources/>
 
       {/* ================= FAQ ================= */}
 
-      <section>
-
-        <h1>
-          FAQ
-        </h1>
-
-      </section>
+      <FAQ/>
 
       {/* ================= FOOTER ================= */}
 
-      <footer>
-
-        <h1>
-          Footer
-        </h1>
-
-      </footer>
+      <Footer/>
 
     </>
   );

@@ -18,20 +18,24 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-    font-family:'Outfit',sans-serif;
-    background:#F8F7F4;
-    color:#171717;
-    overflow-x:hidden;
+#root{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    transition:
+        background .45s ease,
+        color .45s ease;
+
 }
 button,
 a {
     font: inherit;
-}
-
-#root{
-    width:100%;
-    min-height:100vh;
 }
 /* ==========================================
                 NAVBAR
@@ -225,9 +229,17 @@ a {
 
     align-items:start;
 
-    gap:90px;
+    gap:70px;
 
     padding:60px 80px 80px;
+
+    background:var(--bg);
+
+    transition:
+
+        background .45s ease,
+
+        color .45s ease;
 
 }
 
@@ -267,7 +279,8 @@ a {
 
     font-weight:600;
 
-    color:#2A2A2A;
+    color:var(--text);
+
 
 }
 
@@ -289,15 +302,15 @@ a {
 
     font-family:"Outfit",sans-serif;
 
-    font-size:7rem;
+    font-size:5.8rem;
 
-    font-weight:900;
+    font-weight:800;
 
-    line-height:.84;
+    line-height:.92;
 
-    letter-spacing:-7px;
+    letter-spacing:-3px;
 
-    color:#111;
+    color:var(--text);
 
     text-align:left;
 
@@ -333,7 +346,7 @@ a {
 
     line-height:1.9;
 
-    color:#555;
+    color:var(--text-light);
 
     margin-bottom:42px;
 
@@ -382,7 +395,7 @@ a {
 
     font-weight:700;
 
-    color:#111;
+    color:var(--text);
 
 }
 
@@ -390,7 +403,7 @@ a {
 
     font-size:1rem;
 
-    color:#777;
+    color:var(--text-light);
 
     margin-top:4px;
 
@@ -496,9 +509,9 @@ a {
 
     min-height:670px;
 
-    background:white;
+    background:var(--surface);
 
-    border:1px solid #ECE7DF;
+    border:1px solid var(--border);
 
     border-radius:36px;
 
@@ -525,7 +538,7 @@ a {
 
     font-weight:800;
 
-    color:#111;
+    color:var(--text);
 
 }
 
@@ -585,7 +598,7 @@ a {
 
     font-weight:800;
 
-    color:#111;
+    color:var(--text);
 
     margin-bottom:10px;
 
@@ -593,7 +606,7 @@ a {
 
 .upload-drop p{
 
-    color:#777;
+    color:var(--text-light);
 
     font-size:1.1rem;
 
@@ -665,7 +678,7 @@ a {
 
     font-size:1.15rem;
 
-    color:#333;
+    color:var(--text);
 
 }
 
@@ -705,7 +718,7 @@ a {
 
     font-weight:500;
 
-    color:#666;
+    color:var(--text-light);
 
     margin-bottom:8px;
 

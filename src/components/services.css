@@ -1,0 +1,630 @@
+/* =======================================================
+                        SERVICES
+======================================================= */
+
+.services{
+
+    padding:110px 8%;
+
+    background:#F6F5F2;
+
+}
+
+/* =======================================================
+                        HEADER
+======================================================= */
+
+.services-header{
+
+    max-width:760px;
+
+    margin:auto;
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.services-tag{
+
+    color:#B40000;
+
+    letter-spacing:.25em;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.services-header h2{
+
+    font-size:3.6rem;
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    color:#171717;
+
+    letter-spacing:-2px;
+
+    margin-bottom:24px;
+
+}
+
+.services-description{
+
+    max-width:640px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* =======================================================
+                        GRID
+======================================================= */
+
+.bento-grid{
+
+    display:grid;
+
+    grid-template-columns:1.5fr 1fr 1fr;
+
+    grid-template-rows:
+
+    230px
+    230px
+    260px;
+
+    gap:22px;
+
+    max-width:1250px;
+
+    margin:auto;
+
+}
+
+/* =======================================================
+                    GRID AREAS
+======================================================= */
+
+.printing{
+
+    grid-column:1;
+
+    grid-row:1 / span 2;
+
+}
+
+.cad{
+
+    grid-column:2;
+
+}
+
+.filament{
+
+    grid-column:3;
+
+}
+
+.prototype{
+
+    grid-column:2;
+
+}
+
+.student{
+
+    grid-column:3;
+
+}
+
+.object{
+
+    grid-column:1;
+
+}
+
+.workshop{
+
+    grid-column:2 / span 2;
+
+}
+
+/* =======================================================
+                        CARD
+======================================================= */
+
+.card{
+
+    background:white;
+
+    border-radius:30px;
+
+    border:1px solid #ECECEC;
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    box-shadow:
+
+    0 10px 40px rgba(0,0,0,.05);
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 22px 60px rgba(0,0,0,.10);
+
+}
+
+/* =======================================================
+                        ICON
+======================================================= */
+
+.icon-box{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    background:#FFF1F1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:26px;
+
+}
+
+.icon-box svg{
+
+    color:#B40000;
+
+}
+
+/* =======================================================
+                        TEXT
+======================================================= */
+
+.card h3{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    color:#171717;
+
+    margin-bottom:18px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.mini-title{
+
+    color:#B40000;
+
+    font-size:.78rem;
+
+    letter-spacing:.18em;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+/* ======================================================
+                    PRINTING
+====================================================== */
+
+.printing{
+
+    background:linear-gradient(
+        180deg,
+        #FFFFFF,
+        #FFF8F8
+    );
+
+}
+
+.printing h3{
+
+    font-size:2rem;
+
+    margin-top:8px;
+
+}
+
+.printing p{
+
+    max-width:330px;
+
+}
+
+.card-stat{
+
+    margin-top:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.card-stat .number{
+
+    display:block;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:#B40000;
+
+    line-height:1;
+
+}
+
+.card-stat .label{
+
+    display:block;
+
+    margin-top:6px;
+
+    font-size:.9rem;
+
+    color:#666;
+
+    font-weight:500;
+
+}
+
+/* ======================================================
+                        CAD
+====================================================== */
+
+.cad{
+
+    background:#FFFFFF;
+
+    justify-content:center;
+
+}
+
+.cad .mini-title{
+
+    margin-bottom:14px;
+
+}
+
+.cad h3{
+
+    font-size:2.7rem;
+
+    line-height:1.05;
+
+    font-weight:800;
+
+    max-width:220px;
+
+}
+
+.cad p{
+
+    display:none;
+
+}
+
+.cad .icon-box{
+
+    display:none;
+
+}
+
+/* ======================================================
+                    FILAMENT
+====================================================== */
+
+.filament{
+
+    padding:0;
+
+    background:#FCFCFC;
+
+}
+
+.filament img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.filament:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ======================================================
+                RAPID PROTOTYPE
+====================================================== */
+
+.prototype{
+
+    background:linear-gradient(
+        135deg,
+        #FFF0F0,
+        #F8D8D8
+    );
+
+    justify-content:flex-end;
+
+    position:relative;
+
+}
+
+.prototype::before{
+
+    content:"01";
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    font-size:7rem;
+
+    font-weight:800;
+
+    color:rgba(180,0,0,.08);
+
+}
+
+.prototype h3{
+
+    color:#7F1111;
+
+    font-size:2rem;
+
+    max-width:220px;
+
+}
+
+.prototype p{
+
+    display:none;
+
+}
+
+.prototype .icon-box{
+
+    display:none;
+
+}
+
+/* ======================================================
+                    STUDENT
+====================================================== */
+
+.student{
+
+    background:#FFFDFC;
+
+}
+
+.student h3{
+
+    font-size:1.55rem;
+
+}
+
+.student .card-stat{
+
+    margin-top:auto;
+
+}
+
+/* ======================================================
+                    OBJECT
+====================================================== */
+
+.object{
+
+    padding:0;
+
+    background:#FFFFFF;
+
+}
+
+.object img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.object:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ======================================================
+                    WORKSHOP
+====================================================== */
+
+.workshop{
+
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+
+    padding:0;
+
+    overflow:hidden;
+
+}
+
+.workshop-left{
+
+    background:#FFFFFF;
+
+    padding:36px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.workshop-left h3{
+
+    font-size:2rem;
+
+}
+
+.workshop-right{
+
+    background:linear-gradient(
+        135deg,
+        #FAE8E8,
+        #F5D0D0
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.workshop-right svg{
+
+    width:82px;
+
+    height:82px;
+
+    color:#A32222;
+
+}
+
+/* ======================================================
+                    HOVER
+====================================================== */
+
+.card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.45);
+
+    pointer-events:none;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 22px 55px rgba(0,0,0,.08);
+
+}
+.placeholder{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:18px;
+
+    color:#B40000;
+
+    background:#FAFAFA;
+
+}
+
+.placeholder p{
+
+    color:#777;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+}
