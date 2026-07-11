@@ -10,7 +10,7 @@ function FAQ() {
 
   return (
 
-    <section className="faq">
+    <section id="faq" className="faq">
 
       {/* ================= TOP ================= */}
 

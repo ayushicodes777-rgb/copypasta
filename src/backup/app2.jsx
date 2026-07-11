@@ -52,25 +52,15 @@ useEffect(() => {
 
         <ul className="nav-links">
 
-  <li>
-  <a href="#services">Services</a>
-</li>
+  <li>Services</li>
 
-  <li>
-  <a href="#how-it-works">How It Works</a>
-</li>
+  <li>How It Works</li>
 
-  <li>
-  <a href="#resources">Resources</a>
-</li>
+  <li>Resources</li>
 
-  <li>
-  <a href="#faq">FAQ</a>
-</li>
+  <li>FAQ</li>
 
-  <li>
-  <a href="#contact">Contact</a>
-</li>
+  <li>Contact</li>
 
 </ul>
 

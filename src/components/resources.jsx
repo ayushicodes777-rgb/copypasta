@@ -10,7 +10,7 @@ import {
 
 function Resources() {
   return (
-    <section className="resources">
+    <section id="resources" className="resources">
 
       {/* ================= HEADER ================= */}
 
