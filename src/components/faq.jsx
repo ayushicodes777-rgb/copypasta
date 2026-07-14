@@ -155,7 +155,7 @@ function FAQ() {
 
       {/* ================= CONTACT ================= */}
 
-      <div className="faq-contact">
+      <div id="contact" className="faq-contact">
 
         <h3>
 

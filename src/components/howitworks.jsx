@@ -2,7 +2,7 @@ import "./howitworks.css";
 
 function HowItWorks() {
   return (
-    <section id="how-it-works" className="how-it-works">
+    <section id="how-it-works" className="workflow">
 
       {/* ================= HEADER ================= */}
 

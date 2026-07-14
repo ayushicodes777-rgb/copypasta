@@ -75,6 +75,10 @@ a {
 
     cursor:pointer;
 
+    text-decoration:none;
+
+    color:inherit;
+
 transition:transform .25s ease;
 
 .logo:hover{
@@ -278,6 +282,8 @@ transition:transform .25s ease;
 .hero{
 
     display:grid;
+
+    scroll-margin-top: 84px;
 
     grid-template-columns:620px 520px;
 

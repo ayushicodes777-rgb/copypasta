@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <footer id="contact" className="footer">
+    <footer className="footer">
 
       {/* ================= BRAND ================= */}
 

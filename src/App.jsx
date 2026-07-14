@@ -38,7 +38,7 @@ useEffect(() => {
 
       <nav className="navbar">
 
-        <div className="logo">
+        <a href="#home" className="logo">
 
   <Box
     size={34}
@@ -48,7 +48,7 @@ useEffect(() => {
 
   <h2>COPYPASTA</h2>
 
-</div>
+</a>
 
         <ul className="nav-links">
 
@@ -110,7 +110,7 @@ useEffect(() => {
 
             {/* ================= HERO ================= */}
 
-      <section className="hero">
+      <section id="home" className="hero">
 
         {/* ---------- HERO HEADING ---------- */}
 
