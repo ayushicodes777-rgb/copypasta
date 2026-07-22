@@ -1,0 +1,385 @@
+/* ===========================
+   PAGE
+=========================== */
+
+.quote-page{
+    max-width:1400px;
+    width:95%;
+    margin:auto;
+    padding:45px 20px 80px;
+}
+
+.quote-header{
+    margin-bottom:35px;
+}
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:#d32f2f;
+    font-weight:600;
+    transition:.2s;
+}
+
+.back-btn:hover{
+    color:#b71c1c;
+}
+
+.quote-header h1{
+    margin:18px 0 10px;
+    font-size:3rem;
+    font-weight:700;
+}
+
+.quote-header p{
+    color:#666;
+    font-size:16px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.quote-upload-card,
+.quote-config-card,
+.quote-summary-card{
+
+    width:100%;
+
+    background:#fff;
+    border-radius:20px;
+    padding:28px 32px;
+    margin-bottom:28px;
+    box-shadow:0 8px 30px rgba(0,0,0,.07);
+    display:flex;
+    flex-direction:column;
+
+    height:auto;
+
+}
+
+.section-title{
+    margin-bottom:22px;
+}
+
+.section-title h2{
+    font-size:24px;
+    margin-bottom:5px;
+}
+
+.section-title p{
+    color:#777;
+    font-size:14px;
+}
+
+/* ===========================
+   UPLOAD
+=========================== */
+
+.upload-box{
+    width:100%;
+    height:190px;
+
+    border:2px dashed #d32f2f55;
+    border-radius:18px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+
+    margin-top:20px;
+    margin-bottom:0;
+}
+.upload-box:hover{
+
+    border-color:#d32f2f;
+    background:#fff7f7;
+
+}
+
+.upload-box h3{
+
+    margin-top:15px;
+    font-size:22px;
+
+}
+
+.upload-box p{
+
+    color:#d32f2f;
+    margin-top:6px;
+    font-weight:500;
+
+}
+
+/* ===========================
+   CONFIGURATION
+=========================== */
+
+.config-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+
+}
+
+.config-item{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.config-item label{
+
+    margin-bottom:8px;
+    font-weight:600;
+    font-size:15px;
+
+}
+
+.config-item select,
+.config-item input{
+
+    height:48px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    padding:0 14px;
+
+    font-size:15px;
+
+    transition:.25s;
+
+    background:white;
+
+}
+
+.config-item select:focus,
+.config-item input:focus{
+
+    outline:none;
+    border-color:#d32f2f;
+
+}
+
+/* ===========================
+   QUANTITY
+=========================== */
+
+.quantity-box{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    border:1px solid #ddd;
+    border-radius:12px;
+
+    height:48px;
+
+}
+
+.quantity-box button{
+
+    width:45px;
+    height:100%;
+
+    border:none;
+    background:white;
+
+    font-size:20px;
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.quantity-box button:hover{
+
+    background:#f4f4f4;
+
+}
+
+.quantity-box span{
+
+    font-weight:600;
+    font-size:16px;
+
+}
+
+/* ===========================
+   SUMMARY
+=========================== */
+
+.summary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:18px;
+
+    margin-top:15px;
+    margin-bottom:30px;
+
+}
+
+.summary-box{
+
+    background:#fafafa;
+
+    border:1px solid #ececec;
+
+    border-radius:16px;
+
+    padding:22px;
+
+    text-align:center;
+
+    transition:.25s;
+
+}
+
+.summary-box:hover{
+
+    transform:translateY(-4px);
+    border-color:#d32f2f;
+
+}
+
+.summary-box svg{
+
+    color:#d32f2f;
+    margin-bottom:12px;
+
+}
+
+.summary-box h4{
+
+    font-size:14px;
+    color:#777;
+    margin-bottom:8px;
+
+}
+
+.summary-box h2{
+
+    font-size:28px;
+    color:#d32f2f;
+
+}
+
+.summary-box p{
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.cart-btn{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#d32f2f;
+
+    color:white;
+
+    font-size:17px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.cart-btn:hover{
+
+    background:#b71c1c;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.config-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.summary-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.config-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.summary-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.upload-box{
+
+height:150px;
+
+}
+
+.quote-header h1{
+
+font-size:2.2rem;
+
+}
+
+}
+.dragging{
+
+    border-color:#d32f2f !important;
+
+    background:#fff3f3;
+
+    transform:scale(1.01);
+
+}
+
+.upload-box span{
+
+    margin-top:10px;
+
+    color:#2e7d32;
+
+    font-weight:600;
+
+}

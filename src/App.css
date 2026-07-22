@@ -203,25 +203,21 @@ transition:transform .25s ease;
 
     align-items:center;
 
-    gap:12px;
+    gap:14px;
 
 }
 
 /* ---------- ICON BUTTONS ---------- */
 
-.theme-btn,
-.login-btn{
+.icon-btn{
 
-    width:42px;
-    height:42px;
+    width:46px;
+    height:46px;
 
-    border-radius:50%;
+    border:none;
+    border-radius:12px;
 
-    border:1px solid #E5E5E5;
-
-    background:#FFFFFF;
-
-    color:#1A1A1A;   /* <-- This makes the icons visible */
+    background:#ffffff;
 
     display:flex;
     justify-content:center;
@@ -229,18 +225,17 @@ transition:transform .25s ease;
 
     cursor:pointer;
 
-    transition:.25s ease;
+    transition:all .25s ease;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
 
 }
 
-.theme-btn:hover,
-.login-btn:hover{
+.icon-btn:hover{
 
-    border-color:#B40000;
+    transform:translateY(-2px);
 
-    color:#B40000;
-
-    background:#FFF8F8;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
 
 }
 
@@ -267,6 +262,8 @@ transition:transform .25s ease;
     cursor:pointer;
 
     transition:.25s;
+
+    height:46px;
 
 }
 
@@ -808,4 +805,34 @@ transition:transform .25s ease;
 
     transform:translateX(4px);
 
+}
+@media (max-width:1200px){
+
+.hero{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    padding:50px 40px;
+
+}
+
+.hero-title{
+
+    font-size:4.5rem;
+
+}
+
+.upload-card,
+.model-link{
+
+    width:100%;
+
+}
+
+}
+.icon-btn,
+.quote-btn {
+    text-decoration: none;
 }

@@ -1,12 +1,57 @@
 import "./faq.css";
 
+import { useState } from "react";
+
 import {
   HelpCircle,
   Plus,
+  Minus,
   ArrowRight,
 } from "lucide-react";
 
 function FAQ() {
+
+  const [openFAQ, setOpenFAQ] = useState(null);
+
+const faqData = [
+
+  {
+    question: "What file formats are accepted?",
+    answer:
+      "We currently support STL, OBJ, STEP and 3MF files. If your file is in another format, contact the lab for assistance."
+  },
+
+  {
+    question: "How long does a print usually take?",
+    answer:
+      "Most prints are completed within 24–48 hours depending on size, material and printer availability."
+  },
+
+  {
+    question: "What materials are available?",
+    answer:
+      "PLA is the standard material. PETG and TPU are also available for selected projects depending on lab inventory."
+  },
+
+  {
+    question: "Do you provide CAD assistance?",
+    answer:
+      "Yes. Our team can help students refine, repair and prepare models before printing."
+  },
+
+  {
+    question: "Can anyone use the Digital Fabrication Laboratory?",
+    answer:
+      "The facility is primarily intended for Nagaland University students, faculty and approved research projects."
+  },
+
+  {
+    question: "How much does 3D printing cost?",
+    answer:
+      "Pricing depends on material usage, print time and model size. You can request an instant quotation through the website."
+  }
+
+];
 
   return (
 
@@ -53,105 +98,44 @@ function FAQ() {
 
         <div className="faq-right">
 
-          <div className="faq-item">
+  {faqData.map((item, index) => (
 
-            <button className="faq-question">
+    <div className="faq-item" key={index}>
 
-              <span>
+      <button
+        className="faq-question"
+        onClick={() =>
+          setOpenFAQ(openFAQ === index ? null : index)
+        }
+      >
 
-                What file formats are accepted?
+        <span>{item.question}</span>
 
-              </span>
+        {openFAQ === index ? (
+          <Minus size={20} />
+        ) : (
+          <Plus size={20} />
+        )}
 
-              <Plus size={20} />
+      </button>
 
-            </button>
+      {openFAQ === index && (
 
-          </div>
+        <div className="faq-answer">
 
-          <div className="faq-item">
-
-            <button className="faq-question">
-
-              <span>
-
-                How long does a print usually take?
-
-              </span>
-
-              <Plus size={20} />
-
-            </button>
-
-          </div>
-
-          <div className="faq-item">
-
-            <button className="faq-question">
-
-              <span>
-
-                What materials are available?
-
-              </span>
-
-              <Plus size={20} />
-
-            </button>
-
-          </div>
-
-          <div className="faq-item">
-
-            <button className="faq-question">
-
-              <span>
-
-                Do you provide CAD assistance?
-
-              </span>
-
-              <Plus size={20} />
-
-            </button>
-
-          </div>
-
-          <div className="faq-item">
-
-            <button className="faq-question">
-
-              <span>
-
-                Can anyone use the Digital Fabrication Laboratory?
-
-              </span>
-
-              <Plus size={20} />
-
-            </button>
-
-          </div>
-
-          <div className="faq-item">
-
-            <button className="faq-question">
-
-              <span>
-
-                How much does 3D printing cost?
-
-              </span>
-
-              <Plus size={20} />
-
-            </button>
-
-          </div>
+          <p>{item.answer}</p>
 
         </div>
 
-      </div>
+      )}
+
+    </div>
+
+  ))}
+
+</div>
+
+</div>
 
       {/* ================= CONTACT ================= */}
 
